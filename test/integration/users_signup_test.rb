@@ -26,7 +26,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
       end
       follow_redirect!
       assert_template 'users/show'
-      assert_not flash.empty? #is testing for nil? better. probably yes because an empty hash can also be flashed.
+      assert_not flash.empty? #is testing for nil? better. probably so because an empty hash can also be flashed.
     end
 
 
